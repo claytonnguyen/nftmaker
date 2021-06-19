@@ -15,7 +15,7 @@ contract TorNFT is ERC721, Ownable {
     mapping (uint256 => string) private _tokenURIs;
 
     // the name and symbol for the NFT
-    constructor() public ERC721("TheOsunRiver", "TOR") {}
+    constructor() public ERC721("FirstNFT", "ME") {}
 
     // Create a function to mint/create the NFT
    // receiver takes a type of address. This is the wallet address of the user that should receive the NFT minted using the smart contract
