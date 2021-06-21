@@ -3,7 +3,7 @@ const API_URL = process.env.API_URL;
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const alchemyWeb3 = createAlchemyWeb3(API_URL);
 const contract = require("../artifacts/contracts/FirstNFT.sol/TorNFT.json");
-const contractAddress = "0x04f76F94e38E46B0145f228Fb341a3b65841FC02";
+const contractAddress = "0x565e3B1E667FfE56A92C32C9Ac008E8Ca171b206";
 const nftContract = new alchemyWeb3.eth.Contract(contract.abi, contractAddress);
 
 const METAMASK_PUBLIC_KEY = process.env.METAMASK_PUBLIC_KEY;
@@ -53,4 +53,4 @@ async function mintNFT(tokenURI) {
     });
 }
 
-mintNFT("https://ipfs.io/ipfs/QmdZMtdApdeobM5iCRcWqAMByfG4No8tW4oheb7jQjKgTm");
+mintNFT("https://ipfs.io/ipfs/QmNnEUX1ALVJJmwJpVp9yQcYxsaUuH14VmQDhhVsrR4uwz");
